@@ -1,0 +1,71 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Calculator</title>
+    <link href="style.css" rel="stylesheet"/>
+</head>
+<body>
+  <div class="calc">
+    <h1>Calculator</h1>
+    <input placeholder="Enter first number" id="num1">
+      <br><br>
+    <input placeholder="Enter second number" id="num2">
+      <br><br> 
+    <button type="button" id="btn1" onclick="myadd()">Add</button>
+      <br><br>
+    <button type="button" id="btn2" onclick="mysub()">Sub</button>
+      <br><br>
+    <button type="button" id="btn3" onclick="mymult()">Mult</button>
+      <br><br>
+    <button type="button" id="btn4" onclick="mydiv()">Div</button>
+      <br><br>
+    <div id="result">
+      <h3>Result:</h3>
+    </div>
+</div>
+  <script>
+    function myadd() { 
+      var x = Number(document.getElementById('num1').value)
+      var y = Number(document.getElementById('num2').value)
+      var z = x + y
+      z = z.toFixed(2)
+      console.log(x)
+      console.log(y)
+      console.log(z)
+      document.getElementById('result').innerHTML = '<h3>Result: ' + z + '</h3>'
+    }
+    function mysub() {
+      var x = Number(document.getElementById('num1').value)
+      var y = Number(document.getElementById('num2').value)
+      var z = x - y
+      z = z.toFixed(2)
+      console.log(x)
+      console.log(y)
+      console.log(z)
+       document.getElementById('result').innerHTML = '<h3>Result: ' + z + '</h3>'
+    }
+    function mymult() {
+      var x = Number(document.getElementById('num1').value)
+      var y = Number(document.getElementById('num2').value)
+      var z = x * y
+      z = z.toFixed(2)
+      console.log(x)
+      console.log(y)
+      console.log(z)
+      document.getElementById('result').innerHTML = '<h3>Result: ' + z + '</h3>'
+    }
+    function mydiv() {
+      var x = Number(document.getElementById('num1').value)
+      var y = Number(document.getElementById('num2').value)
+      var z = x / y
+      z = z.toFixed(2)
+      console.log(x)
+      console.log(y)
+      console.log(z)
+      document.getElementById('result').innerHTML = '<h3>Result: ' + z + '</h3>'
+    }
+  </script>
+</body>
+</html>
